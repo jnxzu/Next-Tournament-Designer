@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --light: #f1dede;
+  --dark: #273043;
+  --accent: #ff8811;
+}
+
+body {
+  background: var(--light);
+}
