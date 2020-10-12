@@ -1,0 +1,49 @@
+.inputs {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputbox,
+.inputbox > div:not([class]) {
+  height: 70vh;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-button {
+  font-size: xx-large;
+  padding: 0.7em;
+  font-weight: 700;
+  border-radius: 15px;
+  border: none;
+  background: var(--accent);
+  cursor: pointer;
+  transition: 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.or {
+  align-self: center;
+  margin: 1em;
+}
+
+.import-button {
+  font-size: larger;
+  padding: 1em;
+  border-radius: 15px;
+  border: none;
+  background: var(--dark);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+}

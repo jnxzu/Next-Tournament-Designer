@@ -1,0 +1,20 @@
+.input-swap-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.input-swap-enter.input-swap-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: 0.5s ease-in;
+}
+
+.input-swap-leave {
+  opacity: 1;
+}
+
+.input-swap-leave.input-swap-leave-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: 0.5s ease-out;
+}
