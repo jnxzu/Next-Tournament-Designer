@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 
-import Welcome from "./Welcome";
-import Inputs from "./Inputs";
-import Tournament from "./Tournament";
+import Welcome from "./Welcome/Welcome";
+import Inputs from "./Inputs/Inputs";
+import Tournament from "./Tournament/Tournament";
 
 export default function App() {
-  const [progress, setProgress] = useState("welcome");
+  const [progress, setProgress] = useState("inputs");
   const [welcomeOpacity, setWelcomeOpacity] = useState(true);
 
   useEffect(() => {
