@@ -1,13 +1,16 @@
 import React, { useRef } from "react";
 import FadeIn from "react-fade-in";
+import { useDispatch } from "react-redux";
+import { uploadState } from "../../store/actions/generalActions";
 
-export default function NewOrUpload(props) {
+export default function NewOrUpload({ nextInput }) {
   const fileInput = useRef(null);
   const fileReader = new FileReader();
+  const dispatch = useDispatch();
 
-  const handleFileRead = (e) => {
-    const content = fileReader.result;
-    console.log(JSON.parse(content));
+  const handleFileRead = () => {
+    const jsonContent = JSON.parse(fileReader.result);
+    dispatch(uploadState(jsonContent));
   };
 
   const handleFileChosen = (file) => {
@@ -18,7 +21,7 @@ export default function NewOrUpload(props) {
   return (
     <div className="inputbox">
       <FadeIn delay={250} transitionDuration={250}>
-        <button className="new-button" onClick={props.click}>
+        <button className="new-button" onClick={nextInput}>
           design your own tournament!
         </button>
         <h3 className="or">or</h3>

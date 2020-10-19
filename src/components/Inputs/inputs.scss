@@ -47,3 +47,33 @@
     transform: scale(1.05);
   }
 }
+
+.name-input {
+  font-size: xx-large;
+  width: 40vw;
+  height: 8vh;
+  border: none;
+  border-bottom: 1px solid var(--dark);
+  text-align: center;
+  background: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.input-info {
+  margin-top: 0.25em;
+  height: 2.5vh;
+  display: flex;
+  justify-content: space-between;
+
+  .errors {
+    opacity: 0.75;
+    color: darkred;
+  }
+
+  .instruction {
+    opacity: 0.5;
+  }
+}

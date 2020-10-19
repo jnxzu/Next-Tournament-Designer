@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import NewOrUpload from "./NewOrUpload";
 import Name from "./Name";
+import Type from "./Type";
 
 import "./inputs.scss";
 
@@ -16,10 +17,11 @@ export default function Inputs() {
   function renderSwitch(val) {
     switch (val) {
       case "name":
-        return <Name />;
-
+        return <Name nextInput={() => setInputStage("type")} />;
+      case "type":
+        return <Type />;
       default:
-        return <NewOrUpload click={() => setInputStage("name")} />;
+        return <NewOrUpload nextInput={() => setInputStage("name")} />;
     }
   }
 
