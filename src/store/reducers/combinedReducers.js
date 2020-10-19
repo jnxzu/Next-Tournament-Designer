@@ -1,8 +1,8 @@
-import { combineReducers } from "redux";
+import { combineReducers } from 'redux';
 
-import { tournamentName, tournamentType } from "./generalReducers";
+import { tournamentName, tournamentType } from './generalReducers';
 
-import { GeneralTypes } from "../actions/actionTypes";
+import { GeneralTypes } from '../actions/actionTypes';
 
 const appReducer = combineReducers({
   tournamentName,
@@ -10,8 +10,7 @@ const appReducer = combineReducers({
 });
 
 const rootReducer = (state, action) => {
-  const newState =
-    action.type === GeneralTypes.UPLOAD_STATE ? action.data : state;
+  const newState = action.type === GeneralTypes.UPLOAD_STATE ? action.data : state;
 
   return appReducer(newState, action);
 };

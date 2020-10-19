@@ -1,5 +1,5 @@
-import { GeneralTypes } from "./actionTypes";
-import {} from "./actionValues";
+import { GeneralTypes } from './actionTypes';
+import {} from './actionValues';
 
 export const uploadState = (data) => ({
   type: GeneralTypes.UPLOAD_STATE,
@@ -9,4 +9,9 @@ export const uploadState = (data) => ({
 export const setTournamentName = (name) => ({
   type: GeneralTypes.SET_TOURNAMENT_NAME,
   name,
+});
+
+export const setTournamentType = (tournamentType) => ({
+  type: GeneralTypes.SET_TOURNAMENT_TYPE,
+  tournamentType,
 });

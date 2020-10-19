@@ -1,7 +1,6 @@
-import { GeneralTypes, TournamentTypeTypes } from "../actions/actionTypes";
-import { TournamentTypeValues } from "../actions/actionValues";
+import { GeneralTypes } from '../actions/actionTypes';
 
-export const tournamentName = (state = "", action) => {
+export const tournamentName = (state = '', action) => {
   switch (action.type) {
     case GeneralTypes.SET_TOURNAMENT_NAME:
       return action.name;
@@ -10,12 +9,10 @@ export const tournamentName = (state = "", action) => {
   }
 };
 
-export const tournamentType = (state = "", action) => {
+export const tournamentType = (state = '', action) => {
   switch (action.type) {
-    case TournamentTypeTypes.CUP:
-      return TournamentTypeValues.CUP;
-    case TournamentTypeTypes.LEAGUE:
-      return TournamentTypeTypes.LEAGUE;
+    case GeneralTypes.SET_TOURNAMENT_TYPE:
+      return action.tournamentType;
     default:
       return state;
   }

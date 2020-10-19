@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import NewOrUpload from "./NewOrUpload";
-import Name from "./Name";
-import Type from "./Type";
+import React, { useState } from 'react';
+import NewOrUpload from './NewOrUpload';
+import Name from './Name';
+import Type from './Type';
 
-import "./inputs.scss";
+import './inputs.scss';
 
 export default function Inputs() {
-  const [inputStage, setInputStage] = useState("");
+  const [inputStage, setInputStage] = useState('');
 
   // new/upload
   // new -> league/tournament
@@ -16,12 +16,12 @@ export default function Inputs() {
 
   function renderSwitch(val) {
     switch (val) {
-      case "name":
-        return <Name nextInput={() => setInputStage("type")} />;
-      case "type":
+      case 'name':
+        return <Name nextInput={() => setInputStage('type')} />;
+      case 'type':
         return <Type />;
       default:
-        return <NewOrUpload nextInput={() => setInputStage("name")} />;
+        return <NewOrUpload nextInput={() => setInputStage('name')} />;
     }
   }
 

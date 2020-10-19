@@ -29,9 +29,14 @@
   }
 }
 
+.upload-container {
+  display: flex;
+  margin: 1em;
+}
+
 .or {
   align-self: center;
-  margin: 1em;
+  margin-right: 1em;
 }
 
 .import-button {
