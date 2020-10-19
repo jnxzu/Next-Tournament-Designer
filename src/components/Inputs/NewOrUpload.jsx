@@ -23,12 +23,12 @@ export default function NewOrUpload({ nextInput }) {
     <div className="inputbox">
       <FadeIn delay={250} transitionDuration={250}>
         <button type="button" className="new-button" onClick={nextInput}>
-          design your own tournament!
+          Design your own tournament!
         </button>
         <div className="upload-container">
           <h3 className="or">or</h3>
           <button type="button" className="import-button" onClick={() => fileInput.current.click()}>
-            import one
+            import one from file
           </button>
         </div>
       </FadeIn>
