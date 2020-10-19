@@ -3,3 +3,7 @@ export const GeneralTypes = {
   SET_TOURNAMENT_NAME: 'SET_TOURNAMENT_NAME',
   SET_TOURNAMENT_TYPE: 'SET_TOURNAMENT_TYPE',
 };
+
+export const TeamsTypes = {
+  SET_NUMBER_OF_TEAMS: 'SET_NUMBER_OF_TEAMS',
+};

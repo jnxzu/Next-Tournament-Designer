@@ -1,5 +1,4 @@
 import { GeneralTypes } from './actionTypes';
-import {} from './actionValues';
 
 export const uploadState = (data) => ({
   type: GeneralTypes.UPLOAD_STATE,

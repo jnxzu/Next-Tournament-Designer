@@ -5,8 +5,7 @@
   justify-content: center;
 }
 
-.inputbox,
-.inputbox > div:not([class]) {
+.inputbox {
   height: 70vh;
   width: 40vw;
   display: flex;
@@ -26,6 +25,7 @@
   transition: 0.3s ease;
   &:hover {
     transform: scale(1.05);
+    border-radius: 0;
   }
 }
 
@@ -50,6 +50,7 @@
   transition: 0.3s ease;
   &:hover {
     transform: scale(1.05);
+    border-radius: 0;
   }
 }
 
@@ -80,5 +81,34 @@
 
   .instruction {
     opacity: 0.5;
+  }
+}
+
+.type-selection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50vw;
+
+  div {
+    button {
+      text-transform: uppercase;
+      font-size: xx-large;
+      padding: 0.7em;
+      margin: 1em;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s ease;
+      background: var(--dark);
+      color: white;
+      &:hover {
+        font-weight: 700;
+        color: black;
+        background: var(--accent);
+        transform: scale(1.05);
+        border-radius: 0;
+      }
+    }
   }
 }

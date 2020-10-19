@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import FadeIn from 'react-fade-in';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { uploadState } from '../../store/actions/generalActions';
+import { uploadState } from '../../../store/actions/generalActions';
 
 export default function NewOrUpload({ nextInput }) {
   const fileInput = useRef(null);
@@ -20,8 +20,8 @@ export default function NewOrUpload({ nextInput }) {
   };
 
   return (
-    <div className="inputbox">
-      <FadeIn delay={250} transitionDuration={250}>
+    <div>
+      <FadeIn delay={250} transitionDuration={250} className="inputbox">
         <button type="button" className="new-button" onClick={nextInput}>
           Design your own tournament!
         </button>
